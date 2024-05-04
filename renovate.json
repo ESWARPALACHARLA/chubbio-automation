@@ -4,5 +4,6 @@
   "baseBranches": ["master"],
   "schedule": [
     "before 5pm"
-  ]
+  ],
+  "dependencyDashboard": true
 }
