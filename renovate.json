@@ -5,5 +5,15 @@
   "schedule": [
     "before 5pm"
   ],
-  "dependencyDashboard": true
+  "dependencyDashboard": true,
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["pin", "digest"],
+      "groupName": "Vulnerable Dependencies",
+      "updateTypes": ["versioning"],
+      "packagePatterns": [
+        "^.*$"
+      ]
+    }
+  ]
 }
