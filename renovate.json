@@ -2,5 +2,5 @@
   "extends": ["config:base"],
   "rangeStrategy": "pin",
   "baseBranches": ["master"],
-  "schedule": "every 5 minutes"
+  "schedule": "*/5 * * * *"
 }
