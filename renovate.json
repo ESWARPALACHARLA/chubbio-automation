@@ -1,4 +1,4 @@
 {
-  "extends": ["github>renovateapp/config:monorepo"],
+  "extends": ["config:base"],
   "rangeStrategy": "pin"
 }
