@@ -1,0 +1,19 @@
+name: Renovate Bot
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Run every day at midnight
+
+jobs:
+  renovate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      
+      - name: Run Renovate Bot
+        uses: renovatebot/renovate-action@v28
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          command: "start"
