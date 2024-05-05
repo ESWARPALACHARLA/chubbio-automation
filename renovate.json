@@ -5,6 +5,11 @@
   "schedule": [
     "before 5pm"
   ],
+  "prHeader": "upgrades for dependencies",
+  "assignees": [
+    "ESWARPALACHARLA"
+  ],
+  "reviewers": ["ESWARPALACHARLA"],
   "dependencyDashboard": true,
   "packageRules": [
     {
@@ -13,7 +18,8 @@
       "updateTypes": ["versioning"],
       "packagePatterns": [
         "^.*$"
-      ]
+      ],
+      "labels": ["maven-deps"]
     }
   ]
 }
