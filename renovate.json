@@ -1,7 +1,7 @@
 {
   "extends": ["config:base"],
   "rangeStrategy": "pin",
-  "baseBranches": ["main"],
+  "baseBranches": ["master"],
   "schedule": [
     "before 5pm"
   ],
