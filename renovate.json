@@ -9,17 +9,31 @@
   "assignees": [
     "ESWARPALACHARLA"
   ],
+  "separateMinorPatch": true,
   "reviewers": ["ESWARPALACHARLA"],
   "dependencyDashboard": true,
   "packageRules": [
     {
-      "matchUpdateTypes": ["pin", "digest"],
+      "description": "disable",
+      "matchUpdateTypes": ["major","minor","pin", "digest"],
+      "matchDatasources": ["maven"],
+      "matchPackageNames": [
+        "org.springframework.boot:spring-boot-starter-parent"
+      ],
       "groupName": "Vulnerable Dependencies",
       "updateTypes": ["versioning"],
       "packagePatterns": [
         "^.*$"
       ],
       "labels": ["maven-deps"]
+    },
+    {
+      "packageNames": ["ch.qos.logback:logback-classic"],
+      "updateTypes": ["patch", "minor"],
+      "schedule": ["after 12pm on Sunday"]
     }
-  ]
+  ],
+  "regex": {
+
+  }
 }
