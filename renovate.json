@@ -33,7 +33,11 @@
       "updateTypes": ["patch", "minor"],
       "schedule": ["before 5pm"]
     }
+
   ],
+  "vulnerabilityAlerts": {
+    "enabled": true
+  },
   "regex": {
 
   }
