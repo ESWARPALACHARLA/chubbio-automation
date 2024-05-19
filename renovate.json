@@ -36,15 +36,15 @@
     },
     {
       "matchPackageNames": ["org.apache.camel:camel-core"],
-      "allowedVersions": "!<camel-secure-version-range>",
+      "allowedVersions": ">=3.14.1",
       "prPriority": 1,
       "labels": ["security"]
     },
     {
       "description": "Ignore vulnerable version of SnakeYAML",
       "matchPackageNames": ["org.yaml:snakeyaml"],
-      "allowedVersions": "!=1.33",
-      "enabled": false
+      "allowedVersions": "<1.33 || >1.33",
+      "enabled": true
     }
 
   ],
