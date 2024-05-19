@@ -1,5 +1,6 @@
 {
   "extends": ["config:base"],
+  "transitiveRemediation": true,
   "rangeStrategy": "pin",
   "baseBranches": ["main"],
   "schedule": [
@@ -30,7 +31,7 @@
     {
       "packageNames": ["ch.qos.logback:logback-classic"],
       "updateTypes": ["patch", "minor"],
-      "schedule": ["after 12pm on Sunday"]
+      "schedule": ["before 5pm"]
     }
   ],
   "regex": {
