@@ -33,20 +33,7 @@
       "packageNames": ["ch.qos.logback:logback-classic"],
       "updateTypes": ["patch", "minor"],
       "schedule": ["before 5pm"]
-    },
-    {
-      "matchPackageNames": ["org.apache.camel:camel-core"],
-      "allowedVersions": ">=3.14.1",
-      "prPriority": 1,
-      "labels": ["security"]
-    },
-    {
-      "description": "Ignore vulnerable version of SnakeYAML",
-      "matchPackageNames": ["org.yaml:snakeyaml"],
-      "allowedVersions": "<1.33 || >1.33",
-      "enabled": true
     }
-
   ],
   "vulnerabilityAlerts": {
     "enabled": true
