@@ -24,7 +24,8 @@
       "groupName": "Vulnerable Dependencies",
       "updateTypes": ["versioning"],
       "packagePatterns": [
-        "^.*$"
+        "^.*$",
+        "*"
       ],
       "labels": ["maven-deps"]
     },
@@ -32,6 +33,18 @@
       "packageNames": ["ch.qos.logback:logback-classic"],
       "updateTypes": ["patch", "minor"],
       "schedule": ["before 5pm"]
+    },
+    {
+      "matchPackageNames": ["org.apache.camel:camel-core"],
+      "allowedVersions": "!<camel-secure-version-range>",
+      "prPriority": 1,
+      "labels": ["security"]
+    },
+    {
+      "description": "Ignore vulnerable version of SnakeYAML",
+      "matchPackageNames": ["org.yaml:snakeyaml"],
+      "allowedVersions": "!=1.33",
+      "enabled": false
     }
 
   ],
